@@ -1,0 +1,265 @@
+<resources>
+    <string name="app_name">Thinkbro - Fit</string>
+    //Registrar
+    <string name="xCorre">Correo electronico</string>
+    <string name="xContraseña">Contraseña</string>
+    <string name="xNombre">Nombre</string>
+    <string name="xEdad">Edad</string>
+    <string name="xTelefono">Telefono</string>
+    <string name="xInGoogle">Ingresar con google</string>
+    <string name="xPassDoc">Contraseña</string>
+    <string name="invalid_mail">Correo invalido</string>
+    <string name="invalid_password">Contraseña no valida</string>
+    //Date of Pacient
+    <string name="xPeso">Peso</string>
+    <string name="xTalla">Talla</string>
+    <string name="ximc">IMC</string>
+    <string name="xPlanta">Flor favorita</string>
+    //Date excercise
+    <string name="xEjer001">Ejercicio</string>
+    <string name="xSer001">Num. de series</string>
+    <string name="xRep001">Num. de Repeticiones</string>
+    <string name="xRPE001">Num. RPE</string>
+    <string name="xRM001">%1RM</string>
+    <string name="new_notification">Nueva notificación</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- NoSecionActivity -->
+    <string name="xtxtNoPuedo">No puedo iniciar seción</string>
+    <string name="xtxtVerifica">Checa tus datos</string>
+    <string name="xtxtButton">Vale</string>
+    <!-- RegisterActivity -->
+    <string name="xtxtNSS">NSS</string>
+    <!-- NoInternetActivity -->
+    <string name="xtxtRetry">Reintentar</string>
+    <string name="xtxtInternet">¡repámpanos!, checa tu conexión a intenet, por favor</string>
+    <string name="xtxtInstrucciones">Para poder seguir usando la aplicación, comprueba tu conexión a intenet</string>
+    <!-- SettingsActivity -->
+    <string name="xtxtMúsica">Música</string>
+    <string name="xtxtPerfil">Perfil</string>
+    <string name="xtxtEntrena">Entrenamiento</string>
+    <string name="xtxtAprende">Aprender</string>
+    <string name="xtxtSoporte">Soporte</string>
+    <string name="xtxtAcercaDe">Acerca</string>
+    <string name="xtxtNotification">Notificaciones</string>
+    <string name="xtxtNutricion">Nutrición</string>
+    <string name="xtxtAlias">Alias: </string>
+    <!-- AprenderActivity -->
+    <string name="xtxtAprender">Descubre</string>
+    <string name="xtxtConeptoB">La bioquímica es una rama de la ciencia que estudia la composición química de los seres vivos, especialmente las proteínas, carbohidratos, lípidos y ácidos nucleicos.</string>
+    <!-- CamPassActivity -->
+    <string name="xtxtCamPass">Cambiar password</string>
+    <string name="xtxtPassActual">Contraseña actual:</string>
+    <string name="xtxtCorreoActual">Correo actual:</string>
+    <string name="xtxtNewPass">Nueva contraseña</string>
+    <!-- SupportActivity -->
+    <string name="xtxtAssistant">Tú asistente</string>
+    <string name="xtxtNameAssistant">Plume</string>
+    <string name="xtxtAnswer">¿Cómo puedo ayudarte?</string>
+    <string name="xtxtOptionOne">La aplicación se bugea</string>
+    <string name="xtxtOptionTwo">Quiero cambiar la contraseña</string>
+    <string name="xtxtOptionThree">Quiero contactarme con el desarrollador</string>
+    <string name="xtxtOptionFour">No puedo cambiar mi foto de perfil</string>
+    <string name="xtxtMessage">Insert your Message</string>
+    <!-- CovidActivity -->
+    <string name="xtxtCovid">Covid - 19</string>
+    <string name="xtxtVariantes">Variantes</string>
+    <string name="xtxtPaises">Pico de contagios</string>
+    <string name="xtxtSintomas">Sintomas comunes</string>
+    <string name="xtxtSintomasMenos">Sintomas menos habituales</string>
+    <string name="xtxtSMMUno">1. Dolor de garganta</string>
+    <string name="xtxtSMMDos">2. Dolor de cabeza</string>
+    <string name="xtxtSMMTres">3. Molestias y dolores</string>
+    <string name="xtxtSMMCuatro">4. Diarrea</string>
+    <string name="xtxtSMMCinco">5. Ojos rojos</string>
+    <string name="xtxtSintomasSerios">Sintomas Serios</string>
+    <string name="xtxtSSUno">1. Dificultad para respirar o disnea</string>
+    <string name="xtxtSSDos">2. Perdida de movilidad o el habla, o sensacion de confucion</string>
+    <string name="xtxtSSTres">3. Dolor de pecho</string>
+    <string name="xtxtSMUno">1. Fiebre</string>
+    <string name="xtxtSMDos">2. Tos</string>
+    <string name="xtxtSMTres">3. Cansancio</string>
+    <string name="xtxtSMCuatro">4. Perdida de gusto y olfato</string>
+    <!-- IndexActivity -->
+    <string name="xtxtBienvenido">Bienvenido</string>
+    <string name="xtxtSalir">Salir</string>
+    <string name="xtxtIniciar">Verción 1.2</string>
+    <string name="xtxtPreciona">Preciona el icono</string>
+    <string name="xtxtAcerca">Acerca</string>
+    <string name="xtxtNewss">Noticias</string>
+    <string name="xtxtCasosT">Casos totales</string>
+    <string name="xtxtCasosA">Casos activos</string>
+    <string name="xtxtDefunciones">Defunciones</string>
+    <string name="xtxtVacunados">Vacunados</string>
+    <string name="xtxtMayor">Mayor numero de contagios</string>
+    <!-- UsuarioActivity -->
+    <string name="xtxtLogIn">Iniciar seción</string>
+    <string name="xtxtButtonIniciar">Iniciar</string>
+    <string name="xtxtSubtitleLogin">y mejora tu life</string>
+    <!-- NewsActivity -->
+    <string name="xtxtNews">Nuevas buenas</string>
+    <string name="xtxtLeer">Leer más</string>
+    <!-- EntrenamientoActivity -->
+    <string name="xtxtEntren">Entrenamiento</string>
+    <string name="xtxtHiper">Hipertrofia</string>
+    <string name="xtxtForce">Fuerza</string>
+    <string name="xtxtDefini">Definición</string>
+    <string name="xtxtPerderP">Perder peso</string>
+    <string name="xtxtTips">Tips</string>
+    <string name="xtxtMusc">Ejercicios Aislados</string>
+    <string name="xtxtMuscA">Musculos Aislados</string>
+    <string name="xtxtPecho">Pecho</string>
+    <string name="xtxtEspalda">Espalda</string>
+    <string name="xtxtPiernas">Piernas</string>
+    <string name="xtxtBrazos">Brazos</string>
+    <string name="xtxtAbdomen">Abdomen</string>
+    <string name="xtxtGluteos">Gluteos</string>
+    <string name="xtxtHombros">Hombros</string>
+    <string name="xtxtPantorrillas">Pantorrillas</string>
+    <string name="xtxtOtros">Ejercicio en casa</string>
+    <string name="xtxtCasaUno">Ejercicio Casa 1</string>
+    <string name="xtxtCasaDos">Ejercicio Casa 2</string>
+    <string name="xtxtCasaTres">Ejercicio Casa 3</string>
+    <string name="xtxtCasaCuatro">Ejercicio Casa 4</string>
+    <string name="xtxtRegistrar">Registrar</string>
+    <string name="xtxtRPERMYM">RPE, %RM Y Medidas o masa </string>
+    <string name="xtxtRPEYRM">Calcular RPE y %RM</string>
+    <string name="xtxtRegistrarMOP">Registrar medidas o peso</string>
+    <!-- TipsActivity -->
+    <string name="xtxtVolumen">A mayor volumen de entrenamiento</string>
+    <string name="xtxtVolumenDos">Mayor hipertrofia a cierto punto</string>
+    <string name="xtxtSubir">Subir progresivamente el volumen a un 20%</string>
+    <string name="xtxtSubirDos">Es indispensable para hacer crecer los musculos</string>
+    <string name="xtxtGeneral">De forma general</string>
+    <string name="xtxtGeneralDos">10 a 20 repeticiones por grupo muscular es buen rango</string>
+    <string name="xtxtConveptos">Conseptos clave</string>
+    <string name="xtxtPrincipiante">Principiante: Distribuye tus 10-12 series semanales por grupo muscular/patron de movimiento a lo largo de tus días de entrenamiento y cuando repitas trata de aumentar cargas las cargas levantada (Con el incremento mas pequeño disponible para extender las progresiones al maximo tiempo posible)</string>
+    <string name="xtxtIntermedio">Intermedio: Distribuye tus 13-15 series semanales por grupo muscular/patron de movimiento a lo largo de tus días de entrenamiento y sigue un enfoque lineal con una progrecion ondulante (aumenta la carga y reduce las repeticiones) semana tras semana. Pra los ejercicios de aislamiento un modelo de doble progrecion</string>
+    <string name="xtxtAvanzado">Avanzado: Puedes empezar con un mezociclo de acumulacion en el que se aumentan progresibamente el numero de series, seguido de un mesociclo de intencificacion en el que se sigue una progrecion igual a la de intermedios (enfoque lineal) y terminar con un taper y toma de cargas</string>
+    <string name="xtxtRecomendaciones">Recomendaciones de volumen y frecuencias de entrenamiento</string>
+    <string name="xtxtRNovato">Novato: 10/12 series a la semana por grupo muscular/patron de movimiento a una frecuencia de 2-3</string>
+    <string name="xtxtRIntermedio">Intermedio: 13-15 seeries a la semana por grupo muscular/patron de movimiento a una frecuencia de 3-4</string>
+    <string name="xtxtRAvanzado">Avanzado: 16-20 series a la semana por grupo muscular/patron de movimiento a una frecuencia de 3-5</string>
+    <string name="xtxtDescanzo">Tiempos de descanzo</string>
+    <string name="xtxtTiempos">Puedes estirar durante un corto periodo de tiempo(60 segundos)</string>
+    <string name="xtxtUno">1. Antebrazos</string>
+    <string name="xtxtDos">2. Triceps</string>
+    <string name="xtxtTres">3. Biceps</string>
+    <string name="xtxtCuatro">4. Deltoides</string>
+    <string name="xtxtCinco">5. Pectorales</string>
+    <string name="xtxtSeis">6. Recto Abdominal</string>
+    <string name="xtxtSiete">7. Oblicuos</string>
+    <string name="xtxtOcho">8. Serratos</string>
+    <string name="xtxtEstimulo">¿Que estimula nuestra hipertrofia cuando entrenamos?</string>
+    <string name="xtxtEstimuloDos">La extencion nerviosa de las fibras, tambien relacionada con el resto de parametros, será clave en el estímulo de hipertrofia</string>
+    <!-- NutricionActivity -->
+    <string name="xtxtCarbohidratos">Alimentos ricos en hidratos de carbono</string>
+    <string name="xtxtProteinas">Alimentos ricos en Proteinas</string>
+    <string name="xtxtGrasas">Alimentos ricos en Grasas(Lipidos)</string>
+    <!-- EjerciciosActivity -->
+    <string name="xtxtEjercicios">Ejercicios</string>
+    <string name="xtxtRecuerda">Recuerda que...</string>
+    <string name="xtxtRM">¿Qúe es 1%RM?</string>
+    <string name="xtxtRMDos">Es el peso maximo que podemos levantar en 1 repeticion, que es directamente proporcional con el peso levantado normalmente y numero de repeticiones</string>
+    <string name="xtxtRPE">¿Qúe es RPE?</string>
+    <string name="xtxtRPEDos">Es el numero maximo de repeticiones que podemos hacer a una serie tomando en concideracion la fatiga probocada</string>
+    <string name="xtxtParteSup">Parte Superior</string>
+    <string name="xtxtEjercicioUno">Ejercicio 1 (ButterFly)</string>
+    <string name="xtxtEjercicioDos">Ejercicio 2 (ButterFly)</string>
+    <string name="xtxtEjercicioTres">Ejercicio 3 (Tiron con poleas)</string>
+    <string name="xtxtEjercicioCuatro">Ejercicio 4 (Press de mancuernas sentado)</string>
+    <string name="xtxtEjercicioCinco">Ejercicio 5 (Lat Pulldowns)</string>
+    <string name="xtxtEjercicioSeis">Ejercicio 6 (Curl de bicep con mancuerna)</string>
+    <string name="xtxtEjercicioSiete">Ejercicio 7 (Curl de bicep con maquina)</string>
+    <string name="xtxtEjercicioOcho">Ejercicio 8 (Tiron de polea para tricep)</string>
+    <string name="xtxtEjercicioNueve">Ejercicio 9 (Fundos para tricep)</string>
+    <!-- ThirdFragmentActivity -->
+    <string name="xtxtPeso">Masa cargada</string>
+    <string name="xtxtQuestion">¿Cuantos años tienes?</string>
+    <string name="xtxtQuestionTwo">¿Tienes familiares con diavetes?</string>
+    <string name="xtxtQuestionThree">¿A que etnia perteneces?</string>
+    <string name="xtxtMasa">No. de Masa(LB)</string>
+    <string name="xtxtMasaLB">No. de Masa(KG)</string>
+    <string name="xtxtConvercion">Convercion de Unidades LB a KG</string>
+    <string name="xtxtConvercionDos">Convercion de Unidades KG a LB</string>
+    <string name="xtxtRepeticiones">Repeticiones</string>
+    <string name="xtxtCalcular">Calcular RPE</string>
+    <string name="xtxtNoRPE">Numero de RPE</string>
+    <string name="xtxtTitle">Controla más tu salud</string>
+    <string name="xtxtTitleOne">Calcula tus macronutrientes</string>
+    <string name="xtxtSubtitle">y ponte fit</string>
+    <string name="xtxtSubtitleOne">y ponte mamadisimo@</string>
+    <!-- RegisterMacroActivity -->
+    <string name="xtxtRegisterD">Registrar/Editar</string>
+    <string name="xtxtGrasasbux">Grasas</string>
+    <string name="xtxtProteinasx">Proteinas</string>
+    <string name="xtxtCarbohidratosux">Carbohidratos</string>
+    <string name="xtxtRegister">Registra tus macronutrientes</string>
+    <string name="xtxtRestaurar">Restaurar datos</string>
+    <string name="xtxtCaloriasD">Calorias de consumo diario</string>
+    <string name="xtxtCaloriasC">Calorias que debes consumir</string>
+    <string name="xtxtProteinasC">Proteinas que debes consumir</string>
+    <string name="xtxtGrasasC">Grasas que debes consumir</string>
+    <string name="xtxtCarbohidratosC">Carbohidratos que debes consumir</string>
+    <string name="xtxtNumProt">No. de proteinas consumidas</string>
+    <string name="xtxtNumCarbo">No. de Carbohidratos consumidas</string>
+    <!-- ContactsMacroActivity -->
+    <string name="xtxtCitas">Citas</string>
+    <string name="xtxtAgendar">Agendar cita</string>
+    <!-- ListFoodActivity -->
+    <string name="xtxtListFood">Lista de alimentos</string>
+    <!-- CalculosActivity -->
+    <string name="xtxtCalculos">Calculos</string>
+    <string name="xtxtCalorias">Calorias(gr)</string>
+    <string name="xtxtCarbohidratosgr">Carbohidratos(gr)</string>
+    <string name="xtxtProteinasgr">Proteinas(gr)</string>
+    <string name="xtxtGrasasgr">Calorias(gr)</string>
+    <!-- NewLzActivity -->
+    <string name="xtxtNewLz">Nuevos lanzamientos</string>
+    <!-- RecetaPlanActivity -->
+    <string name="xtxtReceta">Receta y/o plan alimenticio</string>
+    <!-- AmbientalPlanActivity -->
+    <string name="xtxtAmbiental">Cuidado Ambiental</string>
+    <string name="xtxtSabiasQue">Sabias que... </string>
+    <string name="xtxtRecuerdaQue">Recuerda que... </string>
+    <string name="xtxtRecuerdaDato">Los animales son nuestros semejantes, asi que no hay que tratarlos como diferentes, ellos tienen mas derecho de estar aqui que nosotros porque ellos han estado en este planeta más tiempo que uno mismo.</string>
+    <string name="xtxtDato">Los paises con mas CO2 que contaminan al planeta son los mas industrializados (Estados Unidos, India y China)</string>
+    <string name="xtxtAnimals">Animales en peligro de extincion</string>
+    <string name="xtxtNotaUno">Recuerda que tú no eres el unico que vive aquí en este planeta, hay mas seres vivos que lo comparten con tigo, e incluso se podria decir que ellos tienen mas derecho de avitarlo que tú.</string>
+    <string name="xtxtDescriptionCA">Esta aplicacion tiene muy encuenta el impacto ambiental que se esta viendo reflejado en la actualidad, donde los incendios cada ves son mas recurrentes, las inundaciones se ven en muchos lugares y hay grandes olas de calor donde no las habia. es por eso que queremos que tomes conciencia un poco...</string>
+    <!-- HelpYouActivity -->
+    <string name="xtxtHelpYou">Ayud@ te</string>
+    <string name="xtxtDeprecion">Depresión</string>
+    <string name="xtxtAnsiedad">Ansiedad</string>
+    <!-- PDFActivity -->
+    <string name="xtxtMaterial">Material de apoyo</string>
+    <!-- HistologiaActivity -->
+    <string name="xtxtHistologia">Histología</string>
+    <string name="xtxtComprobar">Comprobar</string>
+    <string name="xtxtHP1">¿El tejido epitelial?</string>
+    <string name="xtxtHP1A">No es un tejido</string>
+    <string name="xtxtHP1B">Es uno de los tejidos elementales</string><!-- Correct -->
+    <string name="xtxtHP1C">Sus celulas se llamas fibroblastos</string>
+    <string name="xtxtHP1D">Siempre contiene vasos sangineos</string>
+    <string name="xtxtHP2">¿El tejido conjuntivo?</string>
+    <string name="xtxtHP2A">Esta compuesto por celulas y matriz extracelular</string>
+    <string name="xtxtHP2B">Existen distintas variedades</string>
+    <string name="xtxtHP2C">La celula más caracteristica es el fibroblasto</string>
+    <string name="xtxtHP2D">Todas son correctas</string><!-- Correct -->
+    <string name="xtxtHP3">¿El tejido muscular?</string>
+    <string name="xtxtHP3A">Puede ser liso o estriado</string>
+    <string name="xtxtHP3B">Sus celulas siempre poseen sarcomeras</string>
+    <string name="xtxtHP3C">Sus celulas se contraen</string>
+    <string name="xtxtHP3D">Son correctas a y b</string><!-- Correct -->
+    <string name="xtxtHP4">¿El tejido nervisoso?</string>
+    <string name="xtxtHP4A">Esta formado por celulas de dos nucleos</string>
+    <string name="xtxtHP4B">Solo contiene neuronas</string>
+    <string name="xtxtHP4C">Tiene su origen en el ectodermo</string><!-- Correct -->
+    <string name="xtxtHP4D">Solo lo encontramos en el sistema nervioso central</string>
+    <string name="xtxtHP5">Son elementos en la sangre en condiciones normales</string>
+    <string name="xtxtHP5A">Macrófagos</string>
+    <string name="xtxtHP5B">Celulas plasmaticas</string>
+    <string name="xtxtHP5C">Eritrocitos</string><!-- Correct -->
+    <string name="xtxtHP5D">Todas las anteriores</string>
+    <string name="xtxtHistologiaInfo">No tubiste los resultaodos que querias, no te preocupes ... por que recuerda No eres cualquier perra, eres la más perra. Sigue repasando en el apartado Material de apoyo y notaras la diferencia.</string>
+</resources>

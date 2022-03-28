@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    tools:context=".HelpYou.HelpYouActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ximgRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/diseno_regresar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/regreso"
+                app:tint="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/diseno_settings"
+                android:textColor="@color/black"
+                android:textSize="48dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/xtxtHelpYou"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/xtxtDeprecion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/diseno_cardview"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textSize="25dp"
+                        android:text="@string/xtxtDeprecion"
+                        android:fontFamily="@font/montserrat_regular"/>
+
+                    <TextView
+                        android:id="@+id/xtxtInfoDeprecion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:background="@color/ColorOnTertiary"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textSize="25dp"
+                        android:text=""
+                        android:fontFamily="@font/montserrat_regular"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp">
+
+                        <ImageView
+                            android:id="@+id/ximgDeprecion"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:src="@drawable/backusuario"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/xtxtAnsiedad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/diseno_cardview"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textSize="25dp"
+                        android:text="@string/xtxtAnsiedad"
+                        android:fontFamily="@font/montserrat_regular"/>
+
+                    <TextView
+                        android:id="@+id/xtxtInfoAnsiedad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:background="@color/ColorOnTertiary"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textSize="25dp"
+                        android:text=""
+                        android:fontFamily="@font/montserrat_regular"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp">
+
+                        <ImageView
+                            android:id="@+id/ximgAnsiedad"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:src="@drawable/backusuario"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

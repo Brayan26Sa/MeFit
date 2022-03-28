@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    tools:context=".Histology.HistologiaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ximgRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/diseno_regresar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/regreso"
+                app:tint="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/diseno_settings"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="45dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/xtxtHistologia"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:cardBackgroundColor="@color/ColorOnTertiary"
+                            app:cardCornerRadius="35dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/xtxtTitleOne"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp"
+                                    android:textAlignment="center"
+                                    android:textSize="25dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:text="@string/xtxtHP1"/>
+
+                                <RadioGroup
+                                    android:id="@+id/RgpoQuizUno"
+                                    android:layout_below="@id/xtxtTitleOne"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RadioButton
+                                        android:id="@+id/rdbUno"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP1A"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                    <RadioButton
+                                        android:id="@+id/rdbDos"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP1B"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                    <RadioButton
+                                        android:id="@+id/rdbTres"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP1C"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                    <RadioButton
+                                        android:id="@+id/rdbCuatro"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP1D"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                </RadioGroup>
+
+                                <Button
+                                    android:id="@+id/Ok"
+                                    android:layout_below="@id/RgpoQuizUno"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/diseno_boton"
+                                    android:layout_margin="10dp"
+                                    android:text="@string/xtxtComprobar"/>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:cardBackgroundColor="@color/ColorOnTertiary"
+                            app:cardCornerRadius="35dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/xtxtTitleTwo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp"
+                                    android:textAlignment="center"
+                                    android:textSize="25dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:text="@string/xtxtHP2"/>
+
+                                <RadioGroup
+                                    android:id="@+id/RgpoQuizDos"
+                                    android:layout_below="@id/xtxtTitleTwo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RadioButton
+                                        android:id="@+id/rdbQuizUno"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP2A"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                    <RadioButton
+                                        android:id="@+id/rdbQuizDos"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP2B"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                    <RadioButton
+                                        android:id="@+id/rdbQuizTres"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP2C"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                    <RadioButton
+                                        android:id="@+id/rdbQuizCuatro"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP2D"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                </RadioGroup>
+
+                                <Button
+                                    android:id="@+id/OkDos"
+                                    android:layout_below="@id/RgpoQuizDos"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/diseno_boton"
+                                    android:layout_margin="10dp"
+                                    android:text="@string/xtxtComprobar"/>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:cardBackgroundColor="@color/ColorOnTertiary"
+                            app:cardCornerRadius="35dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/xtxtTitleThree"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp"
+                                    android:textAlignment="center"
+                                    android:textSize="25dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:text="@string/xtxtHP3"/>
+
+                                <RadioGroup
+                                    android:id="@+id/RgpoQuizTres"
+                                    android:layout_below="@id/xtxtTitleThree"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RadioButton
+                                        android:id="@+id/rdbQuizTUno"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP3A"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                    <RadioButton
+                                        android:id="@+id/rdbQuizTDos"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP3B"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                    <RadioButton
+                                        android:id="@+id/rdbQuizTTres"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP3C"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                    <RadioButton
+                                        android:id="@+id/rdbQuizTCuatro"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP3D"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                </RadioGroup>
+
+                                <Button
+                                    android:id="@+id/OkTres"
+                                    android:layout_below="@id/RgpoQuizTres"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/diseno_boton"
+                                    android:layout_margin="10dp"
+                                    android:text="@string/xtxtComprobar"/>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:cardBackgroundColor="@color/ColorOnTertiary"
+                            app:cardCornerRadius="35dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/xtxtTitleFor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp"
+                                    android:textAlignment="center"
+                                    android:textSize="25dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:text="@string/xtxtHP4"/>
+
+                                <RadioGroup
+                                    android:id="@+id/RgpoQuizCuatro"
+                                    android:layout_below="@id/xtxtTitleFor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RadioButton
+                                        android:id="@+id/rdbQuizCUno"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP4A"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                    <RadioButton
+                                        android:id="@+id/rdbQuizCDos"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP4B"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                    <RadioButton
+                                        android:id="@+id/rdbQuizCTres"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP4C"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                    <RadioButton
+                                        android:id="@+id/rdbQuizCCuatro"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP4D"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                </RadioGroup>
+
+                                <Button
+                                    android:id="@+id/OkCuatro"
+                                    android:layout_below="@id/RgpoQuizCuatro"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/diseno_boton"
+                                    android:layout_margin="10dp"
+                                    android:text="@string/xtxtComprobar"/>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:cardBackgroundColor="@color/ColorOnTertiary"
+                            app:cardCornerRadius="35dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/xtxtTitleFive"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp"
+                                    android:textAlignment="center"
+                                    android:textSize="25dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:text="@string/xtxtHP5"/>
+
+                                <RadioGroup
+                                    android:id="@+id/RgpoQuizCinco"
+                                    android:layout_below="@id/xtxtTitleFive"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RadioButton
+                                        android:id="@+id/rdbQuizCiUno"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP5A"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                    <RadioButton
+                                        android:id="@+id/rdbQuizCiDos"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP5B"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                    <RadioButton
+                                        android:id="@+id/rdbQuizCiTres"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP5C"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                    <RadioButton
+                                        android:id="@+id/rdbQuizCiCuatro"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:padding="10dp"
+                                        android:background="@drawable/diseno_regresar"
+                                        android:text="@string/xtxtHP5D"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:fontFamily="@font/karla_light"/>
+
+                                </RadioGroup>
+
+                                <Button
+                                    android:id="@+id/OkCinco"
+                                    android:layout_below="@id/RgpoQuizCinco"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/diseno_boton"
+                                    android:layout_margin="10dp"
+                                    android:text="@string/xtxtComprobar"/>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:cardCornerRadius="30dp"
+                        app:cardBackgroundColor="@color/ColorTertiary">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:textAlignment="center"
+                                android:text="@string/xtxtHistologiaInfo"
+                                android:fontFamily="@font/montserrat_medium"/>
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/UriEmbrio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        app:cardCornerRadius="35dp">
+
+                        <ImageView
+                            android:id="@+id/ximgMaterial"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/backusuario"/>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

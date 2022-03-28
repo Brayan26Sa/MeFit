@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ColorBackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ximgRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/diseno_regresar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="02dp"
+                android:src="@drawable/regreso"
+                app:tint="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/xtxtMusica"
+                android:background="@drawable/diseno_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Registrar"
+                android:textSize="48dp"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                app:cardCornerRadius="30dp"
+                                app:cardBackgroundColor="@color/ColorTertiary">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:padding="10dp"
+                                            android:text="Datos personales"
+                                            android:textSize="20dp"
+                                            android:textColor="@color/black"
+                                            android:layout_marginLeft="20dp"/>
+
+
+                                        <EditText
+                                            android:id="@+id/xtxtNombre"
+                                            android:hint="@string/xNombre"
+                                            android:paddingLeft="16dp"
+                                            android:layout_margin="12dp"
+                                            android:background="@drawable/diseno_unic"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="55dp"
+                                            android:textSize="15dp"
+                                            android:textColor="@color/black" />
+
+
+                                        <EditText
+                                            android:id="@+id/xtxtCorreo"
+                                            android:hint="@string/xCorre"
+                                            android:paddingLeft="16dp"
+                                            android:layout_margin="12dp"
+                                            android:background="@drawable/diseno_unic"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="55dp"
+                                            android:textSize="15dp"
+                                            android:textColor="@color/black" />
+
+
+                                        <EditText
+                                            android:id="@+id/xtxtContraseña"
+                                            android:hint="@string/xContraseña"
+                                            android:layout_margin="12dp"
+                                            android:background="@drawable/diseno_unic"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="55dp"
+                                            android:paddingLeft="16dp"
+                                            android:textSize="15dp"
+                                            android:textColor="@color/black" />
+
+
+                                        <EditText
+                                            android:id="@+id/xtxtEdad"
+                                            android:hint="@string/xEdad"
+                                            android:layout_margin="12dp"
+                                            android:background="@drawable/diseno_unic"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="55dp"
+                                            android:paddingLeft="16dp"
+                                            android:textSize="15dp"
+                                            android:textColor="@color/black" />
+
+
+                                        <EditText
+                                            android:id="@+id/xtxtTelefono"
+                                            android:hint="@string/xTelefono"
+                                            android:layout_margin="12dp"
+                                            android:background="@drawable/diseno_unic"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="55dp"
+                                            android:paddingLeft="16dp"
+                                            android:textSize="15dp"
+                                            android:textColor="@color/black" />
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/xcdvSiguienteUno"
+                                            android:layout_width="70dp"
+                                            android:layout_height="70dp"
+                                            android:layout_margin="10dp"
+                                            android:layout_gravity="right"
+                                            app:cardBackgroundColor="@color/ColorPrimary"
+                                            app:cardCornerRadius="20dp">
+
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:src="@drawable/ic_next_card"
+                                                app:tint="@color/ColorBackground"
+                                                android:scaleType="center"/>
+
+                                        </androidx.cardview.widget.CardView>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/xcdvRTwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:layout_margin="10dp"
+                                app:cardCornerRadius="30dp"
+                                app:cardBackgroundColor="@color/ColorTertiary">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="10dp"
+                                        android:text="Datos medicos"
+                                        android:textSize="20dp"
+                                        android:textColor="@color/black"
+                                        android:layout_marginLeft="20dp"/>
+
+
+                                    <EditText
+                                        android:id="@+id/xtxtPeso"
+                                        android:hint="@string/xPeso"
+                                        android:layout_margin="12dp"
+                                        android:background="@drawable/diseno_unic"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="55dp"
+                                        android:paddingLeft="16dp"
+                                        android:textSize="15dp"
+                                        android:textColor="@color/black" />
+
+
+                                    <EditText
+                                        android:id="@+id/xtxtTalla"
+                                        android:hint="@string/xTalla"
+                                        android:layout_margin="12dp"
+                                        android:background="@drawable/diseno_unic"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="55dp"
+                                        android:paddingLeft="16dp"
+                                        android:textSize="15dp"
+                                        android:textColor="@color/black" />
+
+
+                                    <EditText
+                                        android:id="@+id/xtxtIMC"
+                                        android:hint="@string/ximc"
+                                        android:layout_margin="12dp"
+                                        android:background="@drawable/diseno_unic"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="55dp"
+                                        android:paddingLeft="16dp"
+                                        android:textSize="15dp"
+                                        android:textColor="@color/black" />
+
+                                        <EditText
+                                        android:id="@+id/xtxtNSS"
+                                        android:hint="NSS"
+                                        android:layout_margin="12dp"
+                                        android:background="@drawable/diseno_unic"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="55dp"
+                                        android:paddingLeft="16dp"
+                                        android:textSize="15dp"
+                                        android:textColor="@color/black" />
+
+                                    <androidx.cardview.widget.CardView
+                                        android:id="@+id/xcdvSiguienteDos"
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:layout_margin="10dp"
+                                        android:layout_gravity="right"
+                                        app:cardBackgroundColor="@color/ColorPrimary"
+                                        app:cardCornerRadius="20dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/ic_next_card"
+                                            app:tint="@color/ColorBackground"
+                                            android:scaleType="center"/>
+
+                                    </androidx.cardview.widget.CardView>
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/xcdvROne"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:layout_margin="10dp"
+                                app:cardCornerRadius="30dp"
+                                app:cardBackgroundColor="@color/ColorTertiary">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="10dp"
+                                        android:text="Gustos personales"
+                                        android:textSize="20dp"
+                                        android:textColor="@color/black"
+                                        android:layout_marginLeft="20dp"/>
+
+                                    <EditText
+                                    android:id="@+id/xtxtPlanta"
+                                    android:hint="@string/xPlanta"
+                                    android:layout_margin="12dp"
+                                    android:background="@drawable/diseno_unic"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:paddingLeft="16dp"
+                                    android:textSize="15dp"
+                                    android:textColor="@color/black" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_margin="10dp"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/xbtnRegister"
+                                    android:layout_width="90dp"
+                                    android:layout_height="70dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_gravity="right"
+                                    app:cardBackgroundColor="@color/ColorOnTertiary"
+                                    app:cardCornerRadius="20dp">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_send"
+                                        android:scaleType="center"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    tools:context=".IndexActivity">
+
+
+    <io.alterac.blurkit.BlurLayout
+        android:id="@+id/blurlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:blk_blurRadius="4"
+        app:blk_downscaleFactor="0.12"
+        app:blk_fps="0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ximgRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/diseno_regresar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/regreso"
+                app:tint="@color/black"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/diseno_settings"
+                android:textColor="@color/black"
+                android:textSize="48dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/xtxtAcerca"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="68dp"
+                app:neomorph_view_type="circular"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_elevation="6dp"
+                app:neomorph_corner_radius="10dp"
+                app:neomorph_background_color="@color/ColorSecondary"
+                app:neomorph_shadow_color="@color/ColorBorder"
+                app:neomorph_highlight_color="@color/ColorBackground"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/ximgLogo"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_logouno"/>
+
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:neomorph_view_type="circular"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_elevation="6dp"
+                app:neomorph_corner_radius="10dp"
+                app:neomorph_background_color="@color/ColorSecondary"
+                app:neomorph_shadow_color="@color/ColorBorder"
+                app:neomorph_highlight_color="@color/ColorBackground"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/ximgIpn"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="AudioMediaPlayer"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ipn"
+                    app:tint="@color/ColorLogo"/>
+
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="20dp"
+            app:neomorph_view_type="rectangular"
+            app:neomorph_shadow_type="outer"
+            app:neomorph_elevation="6dp"
+            app:neomorph_corner_radius="60dp"
+            app:neomorph_background_color="@color/ColorSecondary"
+            app:neomorph_shadow_color="@color/ColorBorder"
+            app:neomorph_highlight_color="@color/ColorBackground"
+            android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/logoipn"
+                    app:tint="@color/ColorLogo"/>
+
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+        </LinearLayout>
+
+        <soup.neumorphism.NeumorphTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            app:neumorph_shadowColorLight="@color/ColorBorder"
+            app:neumorph_shadowColorDark="@color/ColorBorder"/>
+
+        <TextView
+            android:id="@+id/xbtnRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text="@string/xtxtSalir"
+            android:textSize="30dp"
+            android:textColor="@color/black"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/xcdvIniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/ColorOnPrimary"
+            app:cardCornerRadius="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:text="@string/xtxtIniciar"
+            android:textSize="26dp"
+            android:textColor="@color/black"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    tools:context=".Settings.EntrenamientoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ximgRegresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/diseno_regresar"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/regreso"
+                    app:tint="@color/black"/>
+
+            </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/diseno_settings"
+                            android:textColor="@color/black"
+                            android:textSize="48dp"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="@string/xtxtEntrena"/>
+
+                    </LinearLayout>
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <androidx.cardview.widget.CardView
+                                            android:id="@+id/xcdvHiper"
+                                            android:layout_width="250dp"
+                                            android:layout_height="150dp"
+                                            android:layout_margin="10dp"
+                                            app:cardCornerRadius="35dp">
+
+                                                <ImageView
+                                                    android:id="@+id/idximgHiper"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:scaleType="centerCrop"/>
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:padding="3dp"
+                                                    android:gravity="center"
+                                                    android:textSize="35dp"
+                                                    android:layout_centerInParent="true"
+                                                    android:text="@string/xtxtHiper"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/montserrat_medium" />
+
+                                        </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                            android:layout_width="250dp"
+                                            android:layout_height="150dp"
+                                            android:layout_margin="10dp"
+                                            app:cardCornerRadius="35dp">
+
+                                            <ImageView
+                                                android:id="@+id/idximgFuerza"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:scaleType="centerCrop"/>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:padding="3dp"
+                                                android:gravity="center"
+                                                android:textSize="35dp"
+                                                android:layout_centerInParent="true"
+                                                android:text="@string/xtxtForce"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/montserrat_medium" />
+
+                                        </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                            android:layout_width="250dp"
+                                            android:layout_height="150dp"
+                                            android:layout_margin="10dp"
+                                            app:cardCornerRadius="35dp">
+
+                                            <ImageView
+                                                android:id="@+id/idximgDefinicion"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:scaleType="centerCrop"/>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:padding="3dp"
+                                                android:gravity="center"
+                                                android:textSize="35dp"
+                                                android:layout_centerInParent="true"
+                                                android:text="@string/xtxtDefini"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/montserrat_medium" />
+
+                                        </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                            android:layout_width="250dp"
+                                            android:layout_height="150dp"
+                                            android:layout_margin="10dp"
+                                            app:cardCornerRadius="35dp">
+
+                                            <ImageView
+                                                android:id="@+id/idximgPerder"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:scaleType="centerCrop"/>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:padding="3dp"
+                                                android:gravity="center"
+                                                android:textSize="35dp"
+                                                android:layout_centerInParent="true"
+                                                android:text="@string/xtxtPerderP"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/montserrat_medium" />
+
+                                        </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/xcdvTips"
+                                    android:layout_width="250dp"
+                                    android:layout_height="150dp"
+                                    android:layout_margin="10dp"
+                                    app:cardCornerRadius="35dp">
+
+                                    <ImageView
+                                        android:id="@+id/idximgTips"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="centerCrop"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:padding="3dp"
+                                        android:gravity="center"
+                                        android:textSize="35dp"
+                                        android:layout_centerInParent="true"
+                                        android:text="@string/xtxtTips"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/montserrat_medium" />
+
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:text="@string/xtxtRPERMYM"
+                        android:fontFamily="@font/montserrat_regular"/>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/idCDVRPEYRM"
+                                    android:layout_width="200dp"
+                                    android:layout_height="160dp"
+                                    android:layout_weight="1"
+                                    android:layout_margin="10dp"
+                                    app:cardCornerRadius="65dp">
+
+                                    <ImageView
+                                        android:id="@+id/idIVRPEYRM"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="centerCrop"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:padding="3dp"
+                                        android:gravity="center"
+                                        android:textSize="25dp"
+                                        android:layout_centerInParent="true"
+                                        android:text="@string/xtxtRPERMYM"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/montserrat_medium" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="160dp"
+                                    android:layout_height="160dp"
+                                    android:layout_weight="1"
+                                    android:layout_margin="10dp"
+                                    app:cardCornerRadius="25dp">
+
+                                    <ImageView
+                                        android:id="@+id/idIVRegistrarROP"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="centerCrop"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:padding="3dp"
+                                        android:gravity="center"
+                                        android:textSize="25dp"
+                                        android:layout_centerInParent="true"
+                                        android:text="@string/xtxtRegistrarMOP"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/montserrat_medium" />
+
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="30dp"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:text="@string/xtxtMusc"
+                            android:fontFamily="@font/montserrat_regular"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="200dp"
+                                            android:layout_height="160dp"
+                                            android:layout_weight="1"
+                                            android:layout_margin="10dp"
+                                            app:cardCornerRadius="35dp">
+
+                                            <ImageView
+                                                android:id="@+id/idximgPecho"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:scaleType="centerCrop"/>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:padding="3dp"
+                                                android:gravity="center"
+                                                android:textSize="25dp"
+                                                android:layout_centerInParent="true"
+                                                android:text="@string/xtxtPecho"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/montserrat_medium" />
+
+                                        </androidx.cardview.widget.CardView>
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="160dp"
+                                            android:layout_height="160dp"
+                                            android:layout_weight="1"
+                                            android:layout_margin="10dp"
+                                            app:cardCornerRadius="85dp">
+
+                                            <ImageView
+                                                android:id="@+id/idximgEspalda"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:scaleType="centerCrop"/>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:padding="3dp"
+                                                android:gravity="center"
+                                                android:textSize="25dp"
+                                                android:layout_centerInParent="true"
+                                                android:text="@string/xtxtEspalda"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/montserrat_medium" />
+
+                                        </androidx.cardview.widget.CardView>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="160dp"
+                                            android:layout_margin="10dp"
+                                            app:cardCornerRadius="65dp">
+
+                                            <ImageView
+                                                android:id="@+id/idximgPiernas"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:scaleType="centerCrop"/>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:padding="3dp"
+                                                android:gravity="center"
+                                                android:textSize="25dp"
+                                                android:layout_centerInParent="true"
+                                                android:text="@string/xtxtPiernas"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/montserrat_medium" />
+
+                                        </androidx.cardview.widget.CardView>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <androidx.cardview.widget.CardView
+                                        android:layout_width="200dp"
+                                        android:layout_height="160dp"
+                                        android:layout_weight="1"
+                                        android:layout_margin="10dp"
+                                        app:cardCornerRadius="25dp">
+
+                                        <ImageView
+                                            android:id="@+id/idximgBrazos"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="centerCrop"/>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:padding="3dp"
+                                            android:gravity="center"
+                                            android:textSize="25dp"
+                                            android:layout_centerInParent="true"
+                                            android:text="@string/xtxtBrazos"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/montserrat_medium" />
+
+                                    </androidx.cardview.widget.CardView>
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="160dp"
+                                            android:layout_height="160dp"
+                                            android:layout_weight="1"
+                                            android:layout_margin="10dp"
+                                            app:cardCornerRadius="35dp">
+
+                                            <ImageView
+                                            android:id="@+id/idximgAbdomen"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="centerCrop"/>
+
+                                            <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:padding="3dp"
+                                            android:gravity="center"
+                                            android:textSize="25dp"
+                                            android:layout_centerInParent="true"
+                                            android:text="@string/xtxtAbdomen"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/montserrat_medium" />
+
+                                    </androidx.cardview.widget.CardView>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="160dp"
+                                        android:layout_margin="10dp"
+                                        app:cardCornerRadius="25dp">
+
+                                        <ImageView
+                                            android:id="@+id/idximgGluteos"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="centerCrop"/>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:padding="3dp"
+                                            android:gravity="center"
+                                            android:textSize="25dp"
+                                            android:layout_centerInParent="true"
+                                            android:text="@string/xtxtGluteos"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/montserrat_medium" />
+
+                                    </androidx.cardview.widget.CardView>
+
+                                </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="30dp"
+                                            android:layout_marginBottom="30dp"
+                                            android:textAlignment="center"
+                                            android:textSize="20dp"
+                                            android:padding="10dp"
+                                            android:textColor="@color/black"
+                                            android:text="@string/xtxtOtros"
+                                            android:fontFamily="@font/montserrat_regular"/>
+
+                                    </LinearLayout>
+
+                                    <HorizontalScrollView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <androidx.cardview.widget.CardView
+                                                android:layout_width="250dp"
+                                                android:layout_height="150dp"
+                                                android:layout_margin="10dp"
+                                                app:cardCornerRadius="35dp">
+
+                                                <ImageView
+                                                    android:id="@+id/idximgCasaUno"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:scaleType="centerCrop"/>
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:padding="3dp"
+                                                    android:gravity="center"
+                                                    android:textSize="35dp"
+                                                    android:layout_centerInParent="true"
+                                                    android:text="@string/xtxtCasaUno"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/montserrat_medium" />
+
+                                            </androidx.cardview.widget.CardView>
+
+                                            <androidx.cardview.widget.CardView
+                                                android:layout_width="250dp"
+                                                android:layout_height="150dp"
+                                                android:layout_margin="10dp"
+                                                app:cardCornerRadius="35dp">
+
+                                                <ImageView
+                                                    android:id="@+id/idximgCasaDos"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:scaleType="centerCrop"/>
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:padding="3dp"
+                                                    android:gravity="center"
+                                                    android:textSize="35dp"
+                                                    android:layout_centerInParent="true"
+                                                    android:text="@string/xtxtCasaDos"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/montserrat_medium" />
+
+                                            </androidx.cardview.widget.CardView>
+
+                                            <androidx.cardview.widget.CardView
+                                                android:layout_width="250dp"
+                                                android:layout_height="150dp"
+                                                android:layout_margin="10dp"
+                                                app:cardCornerRadius="35dp">
+
+                                                <ImageView
+                                                    android:id="@+id/idximgCasaTres"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:scaleType="centerCrop"/>
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:padding="3dp"
+                                                    android:gravity="center"
+                                                    android:textSize="35dp"
+                                                    android:layout_centerInParent="true"
+                                                    android:text="@string/xtxtCasaTres"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/montserrat_medium" />
+
+                                            </androidx.cardview.widget.CardView>
+
+                                            <androidx.cardview.widget.CardView
+                                                android:layout_width="250dp"
+                                                android:layout_height="150dp"
+                                                android:layout_margin="10dp"
+                                                app:cardCornerRadius="35dp">
+
+                                                <ImageView
+                                                    android:id="@+id/idximgCasaCuatro"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:scaleType="centerCrop"/>
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:padding="3dp"
+                                                    android:gravity="center"
+                                                    android:textSize="35dp"
+                                                    android:layout_centerInParent="true"
+                                                    android:text="@string/xtxtCasaCuatro"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/montserrat_medium" />
+
+                                            </androidx.cardview.widget.CardView>
+
+                                            <androidx.cardview.widget.CardView
+                                                android:layout_width="250dp"
+                                                android:layout_height="150dp"
+                                                android:layout_margin="10dp"
+                                                app:cardCornerRadius="35dp">
+
+                                                <ImageView
+                                                    android:id="@+id/idximgRegistrar"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:scaleType="centerCrop"/>
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:padding="3dp"
+                                                    android:gravity="center"
+                                                    android:textSize="35dp"
+                                                    android:layout_centerInParent="true"
+                                                    android:text="@string/xtxtRegistrar"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/montserrat_medium" />
+
+                                            </androidx.cardview.widget.CardView>
+
+                                        </LinearLayout>
+
+                            </HorizontalScrollView>
+
+                        </LinearLayout>
+
+                </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

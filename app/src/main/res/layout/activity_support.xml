@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    tools:context=".Settings.SupportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ximgRegresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/diseno_regresar"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="45dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/regreso"
+                    app:tint="@color/black"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/diseno_settings"
+                    android:textColor="@color/black"
+                    android:textSize="48dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/xtxtAssistant"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ximgLogoAssistant"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:background="@drawable/backassitant"
+                android:backgroundTint="@color/ColorOnTertiary"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/dessingassistant"
+                    app:tint="@color/ColorLogo"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/ColorIcon"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/xtxtNameAssistant"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/idRvChats"
+                    android:layout_above="@+id/idRLMsg"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/idRLMsg">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_toLeftOf="@id/idFABSend"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/diseno_profile"
+                        android:backgroundTint="@color/ColorOnSecondary"
+                        android:hint="@string/xtxtMessage"
+                        android:textColorHint="@color/black"
+                        android:fontFamily="@font/karla_light"
+                        android:id="@+id/idEdtMessage"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"/>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_send"
+                        android:id="@+id/idFABSend"
+                        android:layout_margin="6dp"
+                        android:layout_alignParentRight="true"
+                        app:fabCustomSize="45dp"
+                        app:backgroundTint="@color/ColorLogo"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

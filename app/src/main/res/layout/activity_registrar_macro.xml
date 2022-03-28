@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    tools:context=".Nutrition.RegistrarMacroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ximgRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/diseno_regresar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/regreso"
+                app:tint="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/diseno_settings"
+                android:textColor="@color/black"
+                android:textSize="48dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/xtxtRegister"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/xtxtCaloriasD"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/diseno_unic"
+                android:backgroundTint="@color/ColorOnSecondary"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:hint="@string/xtxtCaloriasD"/>
+
+            <EditText
+                android:id="@+id/xtxtCaloriasC"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/diseno_unic"
+                android:backgroundTint="@color/ColorOnSecondary"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:hint="@string/xtxtCaloriasC"/>
+
+            <EditText
+                android:id="@+id/xtxtProteinasC"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/diseno_unic"
+                android:backgroundTint="@color/ColorOnSecondary"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:hint="@string/xtxtProteinasC"/>
+
+            <EditText
+                android:id="@+id/xtxtGrasasC"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/diseno_unic"
+                android:backgroundTint="@color/ColorOnSecondary"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:hint="@string/xtxtGrasasC"/>
+
+            <EditText
+                android:id="@+id/xtxtCarbohidratosC"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/diseno_unic"
+                android:backgroundTint="@color/ColorOnSecondary"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:hint="@string/xtxtCarbohidratosC"/>
+
+            <Button
+                android:id="@+id/xbtnVale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/diseno_boton"
+                android:text="@string/xtxtButton"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

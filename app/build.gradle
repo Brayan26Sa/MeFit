@@ -1,0 +1,95 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.example.mefit"
+        minSdk 28
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-database:19.2.1'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'com.google.firebase:firebase-messaging:23.0.0'
+    implementation 'com.google.firebase:firebase-inappmessaging-display:20.1.1'
+    implementation 'com.google.firebase:firebase-firestore:24.0.1'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    //NavegationBar
+    implementation 'com.ismaeldivita.chipnavigation:chip-navigation-bar:1.2.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.3.70'
+    //ProgressBar
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //Awesome validation
+    implementation 'com.basgeekball:awesome-validation:4.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    //Swipe Cards
+    implementation 'com.lorentzos.swipecards:library:1.0.9@aar'
+    implementation 'com.ismaeldivita.chipnavigation:chip-navigation-bar:1.2.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.3.70'
+    //Agregados
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    //Storage
+    implementation 'com.google.firebase:firebase-storage:19.1.0'
+    //YoutubePlayer
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
+    //Notification
+    implementation 'com.android.volley:volley:1.1.1'
+    //MessageInApp
+    implementation 'com.google.firebase:firebase-inappmessaging-display'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation platform('com.google.firebase:firebase-bom:29.0.0')
+    //EffectBlur
+    implementation 'io.alterac.blurkit:blurkit:1.1.0'
+    implementation 'com.eightbitlab:blurview:1.6.6'
+    //Soft effect
+    implementation 'com.github.fornewid:neumorphism:0.3.0'
+    implementation 'com.github.4inodev:Neomorphic-FrameLayout-Android:1.03'
+    //News
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    //GIF
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.23'
+    //SwipeView
+    implementation 'com.android.support:design:31.0.0'
+    implementation 'com.github.devlight:infinitecycleviewpager:1.0.2'
+    //Music
+    implementation 'com.karumi:dexter:6.2.2'
+    //Material You
+    implementation 'androidx.compose.material3:material3:1.0.0-alpha01'
+    implementation 'com.google.android.material:material:1.5.0-alpha04'
+    //Lottie
+    implementation "com.airbnb.android:lottie:5.0.3"
+}

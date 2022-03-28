@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.FirstFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ColorBackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lnyBackgound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/diseno_cardcorner"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/xbtnSettings"
+                android:layout_gravity="right"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/settings"
+                app:tint="@color/ColorIcon"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/idTVTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/ColorOnPrimary"
+                    android:text="@string/app_name"
+                    android:fontFamily="@font/montserrat_regular"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/ScrollColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/snake"
+                        android:scaleType="centerCrop"
+                        app:tint="@color/ColorIcon"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/diseno_settings"
+                            android:backgroundTint="@color/ColorTertiaryLight"
+                            android:padding="10dp"
+                            android:textSize="40dp"
+                            android:textColor="@color/ColorLogo"
+                            android:text="@string/xtxtTitleOne"
+                            android:fontFamily="@font/montserrat_medium"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/diseno_settings"
+                            android:backgroundTint="@color/ColorTertiaryLight"
+                            android:padding="10dp"
+                            android:textSize="18dp"
+                            android:textColor="@color/ColorLogo"
+                            android:text="@string/xtxtSubtitleOne"
+                            android:fontFamily="@font/montserrat_light"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp"
+                                    android:text="¿Cuantos kg pesas?"
+                                    android:layout_marginBottom="15dp"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/karla_medium"
+                                    android:textSize="28dp"/>
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="350dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    app:cardCornerRadius="40dp">
+
+                                    <EditText
+                                        android:id="@+id/xtxtPesoKg"
+                                        android:layout_width="350dp"
+                                        android:layout_height="60dp"
+                                        android:background="@color/ColorTertiary"
+                                        android:ems="10"
+                                        android:paddingLeft="20dp"
+                                        android:hint="Kilo"
+                                        android:fontFamily="@font/montserrat_light"
+                                        android:textColorHint="@color/black"
+                                        android:inputType="textPersonName"
+                                        android:textColor="@color/black" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp"
+                                    android:text="¿Cuantas veces entrenas a la semana?"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/karla_medium"
+                                    android:textSize="28dp"/>
+
+                                <HorizontalScrollView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:orientation="vertical">
+
+                                        <RadioGroup
+                                            android:id="@+id/RgpoFactor"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <RadioButton
+                                                android:id="@+id/rdbNinguna"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:background="@drawable/diseno_regresar"
+                                                android:text="Ninguna vez"
+                                                android:fontFamily="@font/montserrat_light"
+                                                android:textColor="@color/black"
+                                                android:layout_margin="10dp"
+                                                android:textStyle="bold" />
+
+                                            <RadioButton
+                                                android:id="@+id/rdbTres"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:background="@drawable/diseno_regresar"
+                                                android:fontFamily="@font/montserrat_light"
+                                                android:text="1/3 días "
+                                                android:layout_margin="10dp"
+                                                android:textColor="@color/black"
+                                                android:textStyle="bold" />
+
+                                            <RadioButton
+                                                android:id="@+id/rdbCinco"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:background="@drawable/diseno_regresar"
+                                                android:fontFamily="@font/montserrat_light"
+                                                android:text="3/5 días "
+                                                android:layout_margin="10dp"
+                                                android:textColor="@color/black"
+                                                android:textStyle="bold" />
+
+                                            <RadioButton
+                                                android:id="@+id/rdbSiete"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:background="@drawable/diseno_regresar"
+                                                android:fontFamily="@font/montserrat_light"
+                                                android:text="6/7 días "
+                                                android:layout_margin="10dp"
+                                                android:textColor="@color/black"
+                                                android:textStyle="bold" />
+
+                                            <RadioButton
+                                                android:id="@+id/rdbSiempre"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:background="@drawable/diseno_regresar"
+                                                android:fontFamily="@font/montserrat_light"
+                                                android:text="Todos los días/seciones dobles "
+                                                android:layout_margin="10dp"
+                                                android:textColor="@color/black"
+                                                android:textStyle="bold" />
+
+                                        </RadioGroup>
+
+                                    </LinearLayout>
+
+                                </HorizontalScrollView>
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="16dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_margin="10dp"
+                                            app:cardCornerRadius="26dp"
+                                            app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                                            <TextView
+                                                android:id="@+id/xtxtInfo"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:padding="12dp"
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_marginRight="10dp"
+                                                android:ems="10"
+                                                android:gravity="start|top"
+                                                android:fontFamily="@font/montserrat_light"
+                                                android:textColor="@color/black"
+                                                android:textSize="18dp"/>
+
+                                        </androidx.cardview.widget.CardView>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone"
+                                    android:orientation="vertical">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        app:cardBackgroundColor="@color/ColorOnSecondary"
+                                        app:cardCornerRadius="30dp">
+
+                                        <ImageView
+                                            android:id="@+id/ximgInfo"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="120dp"
+                                            android:scaleType="centerCrop"
+                                            android:src="@drawable/backusuario"/>
+
+                                    </androidx.cardview.widget.CardView>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/RgpoBajar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/rdbBajar"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="10dp"
+                                        android:layout_weight="1"
+                                        android:foregroundTint="#FDFCFC"
+                                        android:text="bajar "
+                                        android:textStyle="bold"
+                                        android:layout_margin="13dp"
+                                        android:background="@drawable/diseno_boton"
+                                        android:backgroundTint="@color/ColorTertiary"
+                                        android:textColor="@color/black" />
+                                    <RadioButton
+                                        android:id="@+id/rdbSubir"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="10dp"
+                                        android:layout_weight="1"
+                                        android:foregroundTint="#FDFCFC"
+                                        android:text="subir "
+                                        android:textStyle="bold"
+                                        android:layout_margin="13dp"
+                                        android:background="@drawable/diseno_boton"
+                                        android:backgroundTint="@color/ColorTertiary"
+                                        android:textColor="@color/black" />
+                                    <RadioButton
+                                        android:id="@+id/rdbMantenerme"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="10dp"
+                                        android:layout_weight="1"
+                                        android:foregroundTint="#FDFCFC"
+                                        android:text="mantenerme "
+                                        android:textStyle="bold"
+                                        android:layout_margin="13dp"
+                                        android:background="@drawable/diseno_boton"
+                                        android:backgroundTint="@color/ColorTertiary"
+                                        android:textColor="@color/black" />
+
+                                </RadioGroup>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/xcdvDies"
+                                            android:layout_width="100dp"
+                                            android:layout_height="100dp"
+                                            android:layout_weight="1"
+                                            android:layout_margin="13dp"
+                                            android:visibility="gone"
+                                            app:cardCornerRadius="28dp"
+                                            app:cardBackgroundColor="@color/ColorLogoExterno">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:textColor="@color/ColorIcon"
+                                                android:textSize="45dp"
+                                                android:textAlignment="center"
+                                                android:text="10%"
+                                                android:fontFamily="@font/karla_bold"/>
+
+                                        </androidx.cardview.widget.CardView>
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/xcdvVeinte"
+                                            android:layout_width="100dp"
+                                            android:layout_height="100dp"
+                                            android:layout_weight="1"
+                                            android:layout_margin="13dp"
+                                            android:visibility="gone"
+                                            app:cardCornerRadius="28dp"
+                                            app:cardBackgroundColor="@color/ColorLogoExterno">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:textColor="@color/ColorIcon"
+                                                android:textSize="45dp"
+                                                android:textAlignment="center"
+                                                android:text="20%"
+                                                android:fontFamily="@font/karla_bold"/>
+
+                                        </androidx.cardview.widget.CardView>
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/xcdvTreinta"
+                                            android:layout_width="100dp"
+                                            android:layout_height="100dp"
+                                            android:layout_weight="1"
+                                            android:layout_margin="13dp"
+                                            android:visibility="gone"
+                                            app:cardCornerRadius="28dp"
+                                            app:cardBackgroundColor="@color/ColorLogoExterno">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:textColor="@color/ColorIcon"
+                                                android:textSize="45dp"
+                                                android:textAlignment="center"
+                                                android:text="30%"
+                                                android:fontFamily="@font/karla_bold"/>
+
+                                        </androidx.cardview.widget.CardView>
+
+                                </LinearLayout>
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"/>
+                            </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

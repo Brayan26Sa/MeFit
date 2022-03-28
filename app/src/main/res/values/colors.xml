@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">@color/ColorOnPrimary</color>
+    <color name="purple_700">@color/ColorBackground</color>
+    <color name="teal_200">@color/ColorOnPrimary</color>
+    <color name="teal_700">@color/ColorOnPrimary</color>
+    <color name="black">#59714A</color>
+
+    <color name="ColorLogo">#48473a</color>
+    <color name="ColorLogoExterno">#e7e885</color>
+    <color name="ColorBackground">#F8F6EC</color>
+    <color name="ColorBackgroundTranparent">#45F6F4E7</color>
+    <color name="ColorPrimary">#566602</color>
+    <color name="ColorOnPrimary">#191d08</color>
+    <color name="ColorSecondary">#f1efdf</color>
+    <color name="ColorOnSecondary">#E7ECCD</color>
+    <color name="ColorTertiary">#ECE9D6</color>
+    <color name="ColorTertiaryLight">#83ECE9D6</color>
+    <color name="ColorOnTertiary">#E5EAC9</color>
+    <color name="ColorIcon">#6c6c5f</color>
+    <color name="ColorBorder">#B8B7AE</color>
+    <color name="cnb_backgroundColor">#e1e6c3</color>
+    <color name="cnb_textColor">#556500</color>
+    <color name="cnb_iconColor">#191d08</color>
+
+</resources>

@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    tools:context=".Settings.NutricionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ximgRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/diseno_regresar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/regreso"
+                app:tint="@color/black"/>
+
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/diseno_settings"
+                    android:textColor="@color/black"
+                    android:textSize="48dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/xtxtNutricion"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:text="@string/xtxtCarbohidratos"
+                    android:padding="10dp"
+                    android:fontFamily="@font/karla_regular"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="25dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVCBUno"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="100dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        app:cardCornerRadius="35dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVCBDos"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        app:cardCornerRadius="35dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVCBTres"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="65dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVCBCuatro"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="220dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="35dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVCBCinco"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="159dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVCBSeis"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="100dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="25dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVCBSiete"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        app:cardCornerRadius="35dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVCBOcho"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        app:cardCornerRadius="75dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVCBNueve"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="25dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVCBDies"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="100dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        app:cardCornerRadius="35dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVCBOnce"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        app:cardCornerRadius="35dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVCBDoce"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:text="@string/xtxtProteinas"
+                    android:padding="10dp"
+                    android:fontFamily="@font/karla_regular"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/xcdvHiper"
+                            android:layout_width="250dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="35dp">
+
+                            <ImageView
+                                android:id="@+id/idximgPTUno"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="250dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="35dp">
+
+                            <ImageView
+                                android:id="@+id/idximgPTDos"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="250dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="35dp">
+
+                            <ImageView
+                                android:id="@+id/idximgPTTres"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="250dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="35dp">
+
+                            <ImageView
+                                android:id="@+id/idximgPTCuatro"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/xcdvTips"
+                            android:layout_width="250dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="35dp">
+
+                            <ImageView
+                                android:id="@+id/idximgPTCinco"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="250dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="35dp">
+
+                            <ImageView
+                                android:id="@+id/idximgPTSeis"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="250dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="35dp">
+
+                            <ImageView
+                                android:id="@+id/idximgPTSiete"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="250dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="35dp">
+
+                            <ImageView
+                                android:id="@+id/idximgPTOcho"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="250dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="35dp">
+
+                            <ImageView
+                                android:id="@+id/idximgPTNueve"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="250dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="35dp">
+
+                            <ImageView
+                                android:id="@+id/idximgPTDies"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="250dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="35dp">
+
+                            <ImageView
+                                android:id="@+id/idximgPTOnce"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="250dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="35dp">
+
+                            <ImageView
+                                android:id="@+id/idximgPTDoce"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:text="@string/xtxtGrasas"
+                    android:padding="10dp"
+                    android:fontFamily="@font/karla_regular"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="220dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="35dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVGRUno"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="159dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVGRDos"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="25dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVGRTres"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="100dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        app:cardCornerRadius="35dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVGRCuatro"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        app:cardCornerRadius="35dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVGRCinco"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="25dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVGRSeis"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="25dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVGRSiete"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="100dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        app:cardCornerRadius="35dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVGROcho"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        app:cardCornerRadius="35dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVGRNueve"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/xcdvRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="65dp"
+                        app:cardBackgroundColor="@color/ColorOnSecondary">
+
+                        <ImageView
+                            android:id="@+id/idIVRegister"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/xcdvListFood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="40dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/xtxtListFood"/>
+
+                    <ImageView
+                        android:id="@+id/ximgFoodChemistry"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"/>
+
+                </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    tools:context=".Settings.MusicArtsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ximgRegresar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/diseno_regresar"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="45dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="02dp"
+                        android:src="@drawable/regreso"
+                        app:tint="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/xtxtMusica"
+                        android:background="@drawable/diseno_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="@string/xtxtNewLz"
+                        android:textSize="48dp"/>
+
+                </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="350dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="35dp">
+
+                        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:videoId="ZhzN7-Q00KU"
+                            app:showFullScreenButton="true"
+                            app:showSeekBar="true"
+                            app:useWebUi="true"
+                            app:autoPlay="true"
+                            app:showYouTubeButton="false"/>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="350dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="@color/ColorOnTertiary">
+
+                        <TextView
+                            android:id="@+id/xtxtVideoClip"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:textSize="20dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:text="Videoclip"
+                            android:fontFamily="@font/montserrat_medium"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="28dp">
+
+
+                        <ImageView
+                            android:id="@+id/ximgArtistaCero"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/adele"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="70dp"
+                            android:layout_height="75dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            app:cardCornerRadius="25dp">
+
+                            <ImageView
+                                android:id="@+id/ximgArtistaCeroUno"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/weekend"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            app:cardCornerRadius="95dp">
+
+                            <ImageView
+                                android:id="@+id/ximgArtistaCeroDos"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/blackpink"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="28dp">
+
+                        <ImageView
+                            android:id="@+id/ximgArtistaCeroTres"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/musicsong"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="@color/ColorOnTertiary">
+
+                            <ImageView
+                                android:id="@+id/ximgArtistaUno"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@color/ColorOnTertiary"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="@color/ColorOnTertiary">
+
+                            <ImageView
+                                android:id="@+id/ximgArtistaDos"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@color/ColorOnTertiary"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="@color/ColorOnTertiary">
+
+                            <ImageView
+                                android:id="@+id/ximgArtistaTres"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@color/ColorOnTertiary"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="@color/ColorOnTertiary">
+
+                            <ImageView
+                                android:id="@+id/ximgArtistaCuatro"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@color/ColorOnTertiary"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="@color/ColorOnTertiary">
+
+                            <ImageView
+                                android:id="@+id/ximgArtistaCinco"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@color/ColorOnTertiary"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="@color/ColorOnTertiary">
+
+                            <ImageView
+                                android:id="@+id/ximgArtistaSeis"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@color/ColorOnTertiary"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="@color/ColorOnTertiary">
+
+                            <ImageView
+                                android:id="@+id/ximgArtistaSiete"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@color/ColorOnTertiary"
+                                android:scaleType="centerCrop"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:text="Latinos"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="30dp"
+                        app:cardBackgroundColor="@color/ColorOnTertiary">
+
+                        <ImageView
+                            android:id="@+id/ximgArtOcho"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@color/ColorOnTertiary"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="90dp"
+                                android:layout_margin="10dp"
+                                app:cardCornerRadius="20dp"
+                                app:cardBackgroundColor="@color/ColorOnTertiary">
+
+                                <ImageView
+                                    android:id="@+id/ximgArtistaDoce"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@color/ColorOnTertiary"
+                                    android:scaleType="centerCrop"/>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="90dp"
+                                android:layout_margin="10dp"
+                                app:cardCornerRadius="20dp"
+                                app:cardBackgroundColor="@color/ColorOnTertiary">
+
+                                <ImageView
+                                    android:id="@+id/ximgArtistaTrece"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@color/ColorOnTertiary"
+                                    android:scaleType="centerCrop"/>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="90dp"
+                                android:layout_margin="10dp"
+                                app:cardCornerRadius="20dp"
+                                app:cardBackgroundColor="@color/ColorOnTertiary">
+
+                                <ImageView
+                                    android:id="@+id/ximgArtistaCatorce"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@color/ColorOnTertiary"
+                                    android:scaleType="centerCrop"/>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="90dp"
+                                android:layout_margin="10dp"
+                                app:cardCornerRadius="20dp"
+                                app:cardBackgroundColor="@color/ColorOnTertiary">
+
+                                <ImageView
+                                    android:id="@+id/ximgArtistaQuince"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@color/ColorOnTertiary"
+                                    android:scaleType="centerCrop"/>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="90dp"
+                                android:layout_margin="10dp"
+                                app:cardCornerRadius="20dp"
+                                app:cardBackgroundColor="@color/ColorOnTertiary">
+
+                                <ImageView
+                                    android:id="@+id/ximgArtistaDiesciseis"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@color/ColorOnTertiary"
+                                    android:scaleType="centerCrop"/>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="30dp"
+                        app:cardBackgroundColor="@color/ColorOnTertiary">
+
+                        <ImageView
+                            android:id="@+id/ximgArtNueve"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@color/ColorOnTertiary"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="80dp"
+                        app:cardBackgroundColor="@color/ColorOnTertiary">
+
+                        <ImageView
+                            android:id="@+id/ximgArtDies"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@color/ColorOnTertiary"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="30dp"
+                        app:cardBackgroundColor="@color/ColorOnTertiary">
+
+                        <ImageView
+                            android:id="@+id/ximgArtOnce"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@color/ColorOnTertiary"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
